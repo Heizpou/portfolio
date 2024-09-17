@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+
+    <!-- Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet" />    
+  </head>
+
+  <body>
+    <div class="row">
+      <!-- Navigation -->
+      <div class="col-md-3">
+        <div id="navigation">
+          <ul>
+            <li data-section="lukepignoteau" class="active">LUKE PIGNOTEAU</li>
+            <li data-section="apropos">A PROPOS</li>
+            <li data-section="experiences">EXPERIENCES</li>
+            <li data-section="projets">PROJETS</li>
+            <li data-section="contact">CONTACT</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="col-md-9">
+        <!-- LUKE PIGNOTEAU -->
+        <div id="lukepignoteau" class="section">
+          <img id="photo" src="../portfolio/assets/71d1eae8-6820-4bf6-ad45-7ad584a0f2d7.jpg" draggable="false" />
+          <p id="nom">LUKE PIGNOTEAU</p>
+          <p id="travail">fullstack développeur</p>
+        </div>
+
+        <!-- A PROPOS -->
+        <div id="apropos" class="section row">
+          <h id="titre">A PROPOS DE MOI</h>
+          <div id="cvbutton" class="col-md-12">
+            <button type="button" class="btn btn-dark">Voir mon CV</button>
+          </div>
+          <p id="texte">
+            Né le 12 février 2002, j'ai eu la chance de développer très tôt une passion pour le développement. J'ai commencé par créer des jeux vidéo,
+            puis j'ai élargi mes compétences au développement d'applications lourdes et de sites web.<br />Je me suis donc naturellement orienté vers
+            des études en développement afin de perfectionner mes compétences et d'apprendre à maîtriser différents langages de programmation.<br /><br />Mon
+            objectif était clair : <strong>APPRENDRE</strong> <br /><br />J'ai ainsi poursuivi ma formation, que ce soit grâce à mes professeurs, mes
+            amis ou à travers les ressources disponibles sur internet. Je n'ai cessé de pratiquer dans l'objectif d'affiner mes compétences.<br /><br /><br />
+            Dans mon quotidien, j'ai également découvert de nouvelles passions qui m'ont permis de me dépasser et de nourrir ma soif d'apprendre.<br />Mes
+            hobbies sont donc la <strong>course</strong>, la <strong>lecture</strong>, le <strong>développement</strong> et les
+            <strong>jeux vidéos</strong>.
+          </p>
+          <div id="passions" class="row">
+            <div class="col-md-3">
+              <img src="../portfolio/assets/course.PNG" draggable="false" />
+            </div>
+            <div class="col-md-3">
+              <img src="../portfolio/assets/lecture.PNG" draggable="false" />
+            </div>
+            <div class="col-md-3">
+              <img src="../portfolio/assets/developpement.PNG" draggable="false" />
+            </div>
+            <div class="col-md-3">
+              <img src="../portfolio/assets/gaming.PNG" draggable="false" />
+            </div>
+          </div>
+        </div>
+
+        <!-- EXPERIENCES -->
+        <div id="experiences" class="section">
+          <h id="titre">MES EXPERIENCES</h>
+          <p>Expérience 1: Développeur Fullstack chez XYZ.</p>
+        </div>
+
+        <!-- PROJETS -->
+        <div id="projets" class="section">
+          <h2>Projets</h2>
+          <p>Voici certains de mes projets:</p>
+        </div>
+
+        <!-- CONTACT -->
+        <div id="contact" class="section">
+          <h2>Contact</h2>
+          <p>Voici mes contacts</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

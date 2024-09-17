@@ -1,0 +1,147 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+.section {
+  margin: 10px;
+  margin-bottom: 20vh;
+  padding-top: 10vh;
+}
+
+#titre {
+  font-family: "Jaro", sans-serif;
+  font-size: 5rem;
+  margin: 0;
+}
+
+/* NAVIGATION */
+#navigation {
+  position: fixed;
+  z-index: 1000;
+  margin-top: 15%;
+}
+
+#navigation ul li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 3rem;
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul li:hover {
+  transform: scale(1.1) translateX(10%);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#navigation ul li::before {
+  content: "◇ - ";
+  margin-right: 10px;
+}
+
+#navigation ul li.active::before {
+  content: "◆ - ";
+  color: red;
+}
+
+.active {
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+  color: red;
+}
+
+/* LUKE PIGNOTEAU */
+#lukepignoteau {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  font-family: "Jaro", sans-serif;
+}
+
+#photo {
+  width: 35%;
+  height: auto;
+  border-radius: 50%;
+  border: solid 2px black;
+}
+
+#photo:hover {
+  transform: rotateY(360deg);
+  transition: 0.8s ease-in-out;
+}
+
+#nom {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: left;
+  margin-left: -10%;
+}
+
+#travail {
+  text-align: right;
+  font-size: 2rem;
+  margin-right: -20%;
+  margin-top: -2%;
+  color: red;
+}
+
+/* A PROPOS */
+#apropos {
+  text-align: center;
+  height: 80vh;
+}
+
+#cvbutton {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+#cvbutton button:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+
+#apropos #texte {
+  color: black;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#passions {
+  padding-left: 15%;
+  padding-right: 15%;
+  align-items: center;
+  justify-content: center;
+}
+
+#passions img {
+  width: 75%;
+  height: auto;
+}
+
+#passions img:hover {
+  transform: scale(1.05) skew(45);
+  background-color: red;
+  transition: 0.3s ease-in-out;
+}
+
+/* EXPERIENCES */
+#experiences {
+  text-align: center;
+  height: 80vh;
+}
+
+#apropos #texte {
+  color: black;
+  padding-left: 15%;
+  padding-right: 15%;
+}
