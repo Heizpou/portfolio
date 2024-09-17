@@ -1,0 +1,40 @@
+#contact {
+  text-align: center;
+  font-family: "Jaro", sans-serif;
+  margin-bottom: 2rem;
+}
+
+#contact p {
+  font-size: 1.5rem;
+}
+
+#contact #subtitle {
+  margin-top: 3rem;
+  font-size: 3.5rem;
+}
+
+#contact p:hover {
+  transform: scale(1.3);
+  transition: 0.3s ease-in-out;
+  color: red;
+}
+
+#linksimg {
+  align-items: center;
+  align-content: center;
+}
+
+#links img {
+  margin-left: 1rem;
+}
+
+#links img:hover {
+  transform: scale(1.3);
+  transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  #contact {
+    margin-bottom: 8rem;
+  }
+}

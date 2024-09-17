@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Link -->
+  <!-- Links -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet" />
+
+  <!-- Styles - CSS -->
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/navigation.css" />
+  <link rel="stylesheet" href="styles/profile.css" />
+  <link rel="stylesheet" href="styles/about.css" />
+  <link rel="stylesheet" href="styles/experience.css" />
+  <link rel="stylesheet" href="styles/contact.css" />
+
+  <title>Portfolio</title>
 </head>
 
 <body>
+  <!-- Navigation -->
   <div class="row">
-    <!-- Navigation -->
-    <div class="col-md-4">
+    <div class="col-md-4" id="navigationContainer">
       <div id="navigation">
+        <!-- Bouton hamburger visible sur les petits écrans -->
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
         <ul>
           <li data-section="lukepignoteau" class="active">LUKE PIGNOTEAU</li>
           <li data-section="apropos">A PROPOS</li>
@@ -28,7 +38,7 @@
     </div>
 
     <!-- Content -->
-    <div class="col-md-8">
+    <div class="col-md-8" id="contentContainer">
       <!-- LUKE PIGNOTEAU -->
       <div id="lukepignoteau" class="section">
         <img id="photo" src="assets/71d1eae8-6820-4bf6-ad45-7ad584a0f2d7.jpg" draggable="false" />
@@ -60,25 +70,17 @@
           <strong>jeux vidéos</strong>.
         </p>
         <div id="passions" class="row">
-          <div class="col-md-3">
-            <img src="assets/course.PNG" draggable="false" />
-          </div>
-          <div class="col-md-3">
-            <img src="assets/lecture.PNG" draggable="false" />
-          </div>
-          <div class="col-md-3">
-            <img src="assets/developpement.PNG" draggable="false" />
-          </div>
-          <div class="col-md-3">
-            <img src="assets/gaming.PNG" draggable="false" />
-          </div>
+          <img src="assets/course.PNG" draggable="false" />
+          <img src="assets/lecture.PNG" draggable="false" />
+          <img src="assets/developpement.PNG" draggable="false" />
+          <img src="assets/gaming.PNG" draggable="false" />
         </div>
       </div>
 
       <!-- EXPERIENCES -->
       <div id="experiences" class="section">
         <div id="formations">
-          <p id="subtitle">MES FORMATIONS</p>
+          <p id="subtitle">FORMATIONS</p>
           <!-- Carousel -->
           <section class="formation-wrapper">
             <button class="formation-arrow" id="formation-arrow-prev">
@@ -112,7 +114,7 @@
           </section>
         </div>
         <div id="professionnels">
-          <p id="subtitle">MES EXPERIENCES PROFESSIONNELLES</p>
+          <p id="subtitle">EXPERIENCES PROFESSIONNELLES</p>
           <!-- Carousel -->
           <section class="professionnels-wrapper">
             <button class="professionnels-arrow" id="professionnels-arrow-prev">
@@ -169,8 +171,10 @@
         <div id="links">
           <h1 id="subtitle">Rejoins moi</h1>
           <div id="linksimg">
-            <a href="https://github.com/Heizpou" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="50px" /></a>
-            <a href="https://www.linkedin.com/in/luke-pignoteau" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="50px" /></a>
+            <a href="https://github.com/Heizpou" target="_blank"><img
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="50px" /></a>
+            <a href="https://www.linkedin.com/in/luke-pignoteau" target="_blank"><img
+                src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="50px" /></a>
             <a href="https://www.instagram.com/luke.pgn/" target="_blank"><img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png"
                 width="50px" /></a>
@@ -180,8 +184,12 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
-    <script src="carousel.js"></script>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/navigation.js"></script>
 </body>
+
+<footer>
+  <p>© Copyright - Luke PIGNOTEAU</p>
+</footer>
 
 </html>

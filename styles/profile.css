@@ -1,0 +1,51 @@
+#lukepignoteau {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Jaro", sans-serif;
+  margin-left: 10%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+#photo {
+  width: 25rem;
+  height: auto;
+  border-radius: 50%;
+  border: solid 0.2rem black;
+}
+
+#photo:hover {
+  transform: rotateY(360deg);
+  transition: 0.8s ease-in-out;
+}
+
+#nom {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: left;
+  margin-left: -10rem;
+}
+
+#travail {
+  text-align: right;
+  font-size: 2rem;
+  margin-right: -10rem;
+  margin-top: -2%;
+  color: red;
+}
+
+@media (max-width: 1200px) {
+  #lukepignoteau {
+    height: 50rem;
+  }
+
+  #nom {
+    margin-left: -3rem;
+  }
+
+  #travail {
+    margin-right: -7rem;
+  }
+}

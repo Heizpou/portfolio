@@ -1,0 +1,104 @@
+/* NAVIGATION */
+#navigation {
+  position: fixed;
+  z-index: 1000;
+  margin-top: 30vh;
+}
+
+#navigation ul li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 3rem;
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#navigation ul li:hover {
+  transform: scale(1.1) translateX(10%);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.active {
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+  color: red;
+}
+
+/* MEDIA QUERIES */
+/* Mobile - changer la disposition du menu */
+@media (max-width: 1200px) {
+  #navigation {
+    position: relative;
+    margin: 0;
+  }
+
+  /* Cacher le menu par défaut */
+  #navigation ul {
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 6rem;
+  }
+
+  /* Afficher le menu quand il est activé */
+  #navigation.toggleMenu ul {
+    display: flex;
+  }
+
+  /* Style du bouton hamburger */
+  .menu-toggle {
+    z-index: 1000;
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  #navigationContainer .col-md-4{
+    width: 0%;
+  }
+
+  #contentContainer .col-md-8{
+    width: 100%;
+  }
+
+  #navigation ul li::before {
+    margin-right: 0;
+  }
+  
+  #navigation ul li.active::before {
+    color: red;
+  }
+}
+
+/* Desktop - rétablir le menu classique */
+@media (min-width: 1200px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  #navigation ul {
+    display: block;
+  }
+
+  #navigation ul li::before {
+    content: "◇ - ";
+    margin-right: 10px;
+  }
+  
+  #navigation ul li.active::before {
+    content: "◆ - ";
+    color: red;
+  }  
+}
