@@ -38,7 +38,8 @@
 
 @media (max-width: 1200px) {
   #lukepignoteau {
-    height: 50rem;
+    margin-top: 10rem;
+    margin-bottom: 25rem;
   }
 
   #nom {
@@ -47,5 +48,9 @@
 
   #travail {
     margin-right: -7rem;
+  }
+
+  #photo {
+    width: 20rem;
   }
 }

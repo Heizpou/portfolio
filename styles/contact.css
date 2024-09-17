@@ -1,7 +1,7 @@
 #contact {
   text-align: center;
   font-family: "Jaro", sans-serif;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 #contact p {
@@ -35,6 +35,14 @@
 
 @media (max-width: 1200px) {
   #contact {
-    margin-bottom: 8rem;
+    margin-bottom: 12rem;
+  }
+
+  #contact #subtitle {
+    font-size: 2.5rem;
+  }
+
+  #contact p {
+    font-size: 1.5rem;
   }
 }

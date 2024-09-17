@@ -214,6 +214,10 @@
 }
 
 @media (max-width: 1200px) {
+  #experiences {
+    margin-bottom: 15rem;
+  }
+
   .professionnels-container {
     height: 20rem;
   }

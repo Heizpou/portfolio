@@ -22,27 +22,19 @@ var lstProfessionnels = createScrollList(liProfessionnelsCount, professionnelsSl
 
 // Evenements lors des click
 formationNextButton.addEventListener("click", () => {
-  stopIntervals()
   scrollFormation(true)
-  startIntervals()
 })
 
 formationPrevButton.addEventListener("click", () => {
-  stopIntervals()
   scrollFormation(false)
-  startIntervals()
 })
 
 professionnelsNextButton.addEventListener("click", () => {
-  stopIntervals()
   scrollProfessionnels(true)
-  startIntervals()
 })
 
 professionnelsPrevButton.addEventListener("click", () => {
-  stopIntervals()
   scrollProfessionnels(false)
-  startIntervals()
 })
 
 // Automatisation du scroll
@@ -68,7 +60,7 @@ function scrollProfessionnels(forward) {
   //   Si scroll en arrière
   else {
     if (indexProfessionnels <= 0) {
-      indexProfessionnels = lstProfessionnels.length
+      indexProfessionnels = lstProfessionnels.length - 1
     } else {
       indexProfessionnels--
     }
@@ -90,7 +82,7 @@ function scrollFormation(forward) {
   // Si scroll en arrière
   else {
     if (indexFormation <= 0) {
-      indexFormation = lstFormation.length
+      indexFormation = lstFormation.length - 1
     } else {
       indexFormation--
     }
@@ -109,19 +101,12 @@ function startIntervals() {
   }, 5000)
 }
 
-function stopIntervals() {
-  clearInterval(professionnelsInterval)
-  clearInterval(formationInterval)
-}
-
 window.addEventListener("resize", () => {
   professionnelsSlideWidth = professionnelsSlide.clientWidth
   formationSlideWidth = formationSlide.clientWidth
 
   lstProfessionnels = createScrollList(liProfessionnelsCount, professionnelsSlideWidth)
   lstFormation = createScrollList(liFormationCount, formationSlideWidth)
-
-  startIntervals()
 })
 
 // Initialiser le premier intervalle

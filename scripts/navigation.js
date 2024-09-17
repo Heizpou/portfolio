@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Fonction pour gérer le clic sur les éléments de la navigation
   navItems.forEach((item) => {
     item.addEventListener("click", function () {
-      stopIntervals()
       const sectionId = item.getAttribute("data-section")
       const section = document.getElementById(sectionId)
 
@@ -60,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
       // Mettre à jour la classe active manuellement
       navigation.classList.remove("toggleMenu")
       removeActiveClasses()
-      startIntervals()
       onScroll()
     })
   })
