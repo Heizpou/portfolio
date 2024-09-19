@@ -95,10 +95,10 @@ function scrollFormation(forward) {
 function startIntervals() {
   professionnelsInterval = setInterval(() => {
     scrollProfessionnels(true)
-  }, 4000)
+  }, 6000)
   formationInterval = setInterval(() => {
     scrollFormation(true)
-  }, 5000)
+  }, 7500)
 }
 
 window.addEventListener("resize", () => {

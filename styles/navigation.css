@@ -2,7 +2,6 @@
 #navigation {
   position: fixed;
   z-index: 1000;
-  margin-top: 30vh;
 }
 
 #navigation ul li {
@@ -28,55 +27,66 @@
 }
 
 /* MEDIA QUERIES */
-/* Mobile - changer la disposition du menu */
 @media (max-width: 1200px) {
   #navigation {
-    position: relative;
-    margin: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
-  /* Cacher le menu par défaut */
   #navigation ul {
     display: none;
     flex-direction: column;
     align-content: center;
     align-items: center;
     position: relative;
-    top: 0;
+    top: 3rem;
     left: 0;
-    padding-top: 6rem;
   }
 
-  /* Afficher le menu quand il est activé */
   #navigation.toggleMenu ul {
     display: flex;
+    padding-bottom: 5%;
+  }
+
+  #navigation ul li {
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  #navigation ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
   }
 
   /* Style du bouton hamburger */
   .menu-toggle {
-    z-index: 1000;
+    z-index: 1100;
     display: block;
     background: none;
     border: none;
     font-size: 2rem;
     cursor: pointer;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
   }
 
-  #navigationContainer .col-md-4{
+  #navigationContainer .col-md-4 {
     width: 0%;
   }
 
-  #contentContainer .col-md-8{
+  #contentContainer .col-md-8 {
     width: 100%;
   }
 
   #navigation ul li::before {
     margin-right: 0;
   }
-  
+
   #navigation ul li.active::before {
     color: red;
   }
@@ -88,6 +98,10 @@
     display: none;
   }
 
+  #navigation {
+    margin-top: 30vh;
+  }
+
   #navigation ul {
     display: block;
   }
@@ -96,9 +110,9 @@
     content: "◇ - ";
     margin-right: 10px;
   }
-  
+
   #navigation ul li.active::before {
     content: "◆ - ";
     color: red;
-  }  
+  }
 }
