@@ -57,9 +57,11 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       
       // Mettre à jour la classe active manuellement
-      navigation.classList.remove("toggleMenu")
       removeActiveClasses()
       onScroll()
+      setTimeout(() => {
+        navigation.classList.remove("toggleMenu")
+      }, 1000)
     })
   })
 
